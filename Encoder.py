@@ -7,8 +7,8 @@ def handleRollover(num):
     return num
 
 
-text = raw_input("enter text to be encrypted (no spaces all cap)")
-key = raw_input("enter key to encrypt against (no spaces all cap)")
+text = input("enter text to be encrypted (no spaces all cap)")
+key = input("enter key to encrypt against (no spaces all cap)")
 cipher = []
 
 keyPointer = 0
