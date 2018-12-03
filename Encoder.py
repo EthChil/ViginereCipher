@@ -13,10 +13,13 @@ cipher = []
 
 keyPointer = 0
 
-for i in range(len(text)):
-   cipher.append(alphabet[handleRollover(alphabet.index(key[keyPointer]) + alphabet.index(text[i]))])
-   if(keyPointer >= len(key)-1):
-       keyPointer = 0;
+for i in range(0, len(text)):
+    print(alphabet[keyPointer])
+
+    cipher.append(alphabet[handleRollover(alphabet.index(key[keyPointer]) + alphabet.index(text[i]))])
+    keyPointer += 1
+    if(keyPointer > len(key)-1):
+        keyPointer = 0
 
 print("".join(cipher))
 
