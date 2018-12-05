@@ -6,12 +6,18 @@
 # B (B' + A) C +
 # AC + BB' + AB + B'C
 
+#New Data Structure
+#
+#
+#
+#
+
 import re
 
 potentialVarList = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 
-LS = raw_input("enter left side no spaces")
-RS = raw_input("enter right side no spaces")
+LS = input("enter left side no spaces")
+RS = input("enter right side no spaces")
 
 terms = LS.split("+")
 varList = []
